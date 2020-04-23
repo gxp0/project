@@ -21,7 +21,18 @@
           .link{ color :red;
                background-color:grey;
                border-color: grey;}
+       input[type=text]{background-color: lightgrey;
+                        font-weight:bolder;
+                        font-family: courier;
+                        }
+       button:hover{ background-color:lightblue;
+                     }
+       @media print{.link{display :none;}}
 
+      #submit{border-color:grey;
+              }
+      body{display :flex;
+          flex-wrap:wrap;}        
 
     </style>
   </head>
@@ -188,8 +199,8 @@ The iPhone 11 includes a dual-lens 12 MP rear camera array. There is one ƒ/2.4 
 </button>
 </div>
 <form>
-   <input name="review";type="number";placeholder="rating">
-   <button style="border-color:black;background-color:lightgrey;">submit!</button>
+   <input type="text" placeholder="rating" name="form">
+   <button id="submit">submit!</button>
 </form>
 
 
